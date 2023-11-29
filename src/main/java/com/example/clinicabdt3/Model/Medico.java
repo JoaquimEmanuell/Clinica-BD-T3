@@ -1,15 +1,19 @@
 package com.example.clinicabdt3.Model;
 
-public class Medico extends Usuario{
+public class Medico {
+    private String nome;
     private String CRM;
     private String especialidade;
-    private String planoQueAtende;
+    private String senha;
 
-    public Medico(String nome, String CPF, String senha, String CRM) {
-        super(nome, CPF, senha);
+
+
+    public Medico(String nome, String senha, String CRM, String especialidade) {
+        this.nome = nome;
+        this.senha = senha;
         this.CRM = CRM;
         this.especialidade = especialidade;
-        this.planoQueAtende = planoQueAtende;
+
     }
 
     public String getEspecialidade() {
@@ -20,19 +24,27 @@ public class Medico extends Usuario{
         this.especialidade = especialidade;
     }
 
-    public String getPlanoQueAtende() {
-        return planoQueAtende;
-    }
-
-    public void setPlanoQueAtende(String planoQueAtende) {
-        this.planoQueAtende = planoQueAtende;
-    }
-
     public String getCRM() {
         return CRM;
     }
 
     public void setCRM(String CRM) {
         this.CRM = CRM;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

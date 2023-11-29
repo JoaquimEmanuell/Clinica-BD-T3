@@ -1,29 +1,29 @@
 package com.example.clinicabdt3.Model;
 
-public class Paciente extends Usuario{
-    private int idade;
-    private String planoDeSaude;
+public class Paciente {
+
+    private String CPF;
+    private String nome;
+    private String idade;
 
 
-    public Paciente(String nome, String CPF, String senha, int idade, String planoDeSaude) {
-        super(nome, CPF, senha);
-        this.idade = idade;
-        this.planoDeSaude = planoDeSaude;
+    public String getCPF() {
+        return CPF;
     }
-
-    public int getIdade() {
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+    public String getIdade() {
         return idade;
     }
-
-    public void setIdade(int idade) {
+    public void setIdade(String idade) {
         this.idade = idade;
     }
-
-    public String getPlanoDeSaude() {
-        return planoDeSaude;
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setPlanoDeSaude(String planoDeSaude) {
-        this.planoDeSaude = planoDeSaude;
-    }
 }
